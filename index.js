@@ -1,7 +1,7 @@
 import express from "express";
 
 
-// import dotenv package 
+// import dotenv package
 import dotenv from 'dotenv';
 
 
@@ -12,19 +12,18 @@ dotenv.config();
 import mongoose from "mongoose";
 
 
-// create an instance of express server 
+// create an instance of express server
 const app = express();
 
 
 
-// create a variable for our PORT number 
-const PORT = process.env.PORT??5000;
+// create a variable for our PORT number
+const PORT = process.env.PORT?? 5000;
 
 
-// create a routes to make request to the server 
-app.get('/', (req, res)=>{
+// create a routes to make request to the server
+app.get('/', (req, res) => {
      res.send ('Hello World');
-    
 });
 
 mongoose.connect(process.env.MONGO_DB_CONSTRING, (error)=>{

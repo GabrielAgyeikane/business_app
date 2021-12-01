@@ -18,7 +18,7 @@ const app = express();
 
 
 // create a variable for our PORT number 
-const PORT = 5000;
+const PORT = process.env.PORT??5000;
 
 
 // create a routes to make request to the server 
@@ -36,7 +36,6 @@ if (error){
 else {
     return console.log("Connection to MongoDB was successful");
 }
-
 
 });
 

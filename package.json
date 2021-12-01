@@ -5,7 +5,8 @@
   "main": "index.js",
   "type":"module",
   "scripts": {
-    "start":"nodemon index.js",
+    "start":"node index.js",
+    "start-dev": "nodemon index.js"
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Gabby",
@@ -16,5 +17,10 @@
     "express": "^4.17.1",
     "mongoose": "^6.0.14",
     "nodemon": "^2.0.15"
+  },
+
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+    
   }
 }

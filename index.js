@@ -22,8 +22,8 @@ const PORT = process.env.PORT?? 5000;
 
 
 // create a routes to make request to the server
-app.get('/', (req, res) => {
-     res.send ('Hello World');
+app.get("/", (request, response) => {
+     response.send ("Hello World");
 });
 
 mongoose.connect(process.env.MONGO_DB_CONSTRING, (error)=>{

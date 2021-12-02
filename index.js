@@ -35,8 +35,6 @@ mongoose.connect(process.env.MONGO_DB_CONSTRING, (error) => {
      // start the server to listen to incoming request 
         // on the specifield PORT 
         app.listen(PORT, () => console.log(`Server is up and running on: ${PORT}`));
-
-
      
     }
 

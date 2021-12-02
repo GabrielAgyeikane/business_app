@@ -31,16 +31,16 @@ mongoose.connect(process.env.MONGO_DB_CONSTRING, (error) => {
         return console.log("Couldnt connect to MongoDB");
     }
     else {
-        console.log("Connection to MongoDB was successful");
-        // start the server to listen to incoming request 
-        // on the specifield PORT 
-        app.listen(PORT, () => console.log(`Server is up and running on: ${PORT}`));
+       return console.log("Connection to MongoDB was successful");
+     
     }
 
 });
 
 
-
+   // start the server to listen to incoming request 
+        // on the specifield PORT 
+        app.listen(PORT, () => console.log(`Server is up and running on: ${PORT}`));
 
 
 
